@@ -1,0 +1,74 @@
+/* ---- Variables ---- */
+:root{
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --brand: #22d3ee;
+  --accent: #34d399;
+  --border: rgba(255,255,255,0.08);
+  --shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container{
+  width:min(100%, 900px);
+  margin-inline:auto;
+  padding: 1.25rem;
+}
+
+.site-header, .site-footer{
+  border-bottom: 1px solid var(--border);
+}
+
+.site-footer{
+  border-top: 1px solid var(--border);
+  border-bottom: none;
+  color: var(--muted);
+}
+
+h1{
+  font-size: 1.8rem;
+  margin:.5rem 0 0 0;
+}
+h2{
+  font-size: 1.2rem;
+  margin:0;
+}
+
+.experience-card{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: var(--shadow);
+}
+
+.xp-header{
+  margin-bottom:.5rem;
+}
+
+.meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem;
+  font-size:.9rem;
+  color: var(--muted);
+}
+
+.xp-list{
+  margin:0;
+  padding-left:1.25rem;
+}
+.xp-list li::marker{
+  color: var(--accent);
+}
